@@ -45,7 +45,9 @@ TikTok: rayyarr_
                     allowOutsideClick: false,
                     showCancelButton: false,
                 });
-                if(nama && nama.length < 4){
+                if(nama && nama.length < 8){
+                    audio = new Audio('hihihi.mp3');
+                    audio.play();
                 	window.nama = nama;
                     await swalsy.fire('' + nama + ' ulang tahun ya hari ini?');
                     await swals.fire('Selamat ulang tahun, ' + nama + '! &#128155;');
