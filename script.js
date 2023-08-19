@@ -1,77 +1,29 @@
-document.getElementById("button").addEventListener("click", function() {
-  var alertBox = document.getElementById("button");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert");
-  alertBox.style.display = "block";
-});
+const content = {
+    message : [
+        'haloo aufaaal','idiiih umurnya berkurang nich', 
+        'tambah tua ajaa', 'umur 21 ya kan?', 'doa baik buat aufaal', 'semoga hal hal baik selalu ada dan datang buat aufal',
+        'terima kasih sudah ada sampai hari inii hihihi', 'i love u more than you know', 'sekiaaan aufal ganteng wkwk',
+        'dadaa ganteng love uuu', 'tutup ish, ga di tutup tutup kangen aku fiks uda ini',
+    ],
+    button: [
+        'haloo eva cantik, baik, tidak sombong, dan suka menabung', 'iya nich',
+        'bener lagii', 'jelas iya, gamungkin tidak, wajib dipencet', 'next', 'amiiin','sama sama evaaa',
+        'wajib i love u too evaa sii gabisa pilih yang lain','next', 'tutup tutup', 'terakhir nih pencet aja'
+    ],
+}
 
-document.getElementById("Button").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert2");
-  alertBox.style.display = "block";
-});
+const button = document.getElementById('button');
+const message = document.getElementById('message');
+const buttonContainer = document.getElementById('button_container');
 
-document.getElementById("Button2").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert2");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert3");
-  alertBox.style.display = "block";
+let i = 0;
+button.addEventListener('click',function(){
+    if (i === 10) {
+       buttonContainer.innerHTML = `<a href="untuk aufal marom.pdf" target="_self">
+        <button>terakhir nih pencet aja</button>
+        </a>` 
+    }
+    message.innerHTML = content.message[i];
+    button.innerHTML = content.button[i];
+    i++ 
 });
-
-document.getElementById("Button3").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert3");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert4");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button4").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert4");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert5");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button5").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert5");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert6");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button6").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert6");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert8");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button8").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert8");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert9");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button9").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert9");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert10");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button10").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert10");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("alert11");
-  alertBox.style.display = "block";
-});
-
-document.getElementById("Button11").addEventListener("click", function() {
-  var alertBox = document.getElementById("alert11");
-  alertBox.style.display = "none";
-  var alertBox = document.getElementById("penutup");
-  alertBox.style.display = "block";
-});
-
