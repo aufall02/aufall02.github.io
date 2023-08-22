@@ -18,7 +18,7 @@ const buttonContainer = document.getElementById('button_container');
 
 let i = 0;
 button.addEventListener('click',function(){
-    if (i === 10) {
+    if (i === (content.button.length - 1)) {
        buttonContainer.innerHTML = `<a href="untuk aufal marom.pdf" target="_self">
         <button>terakhir nih pencet aja</button>
         </a>` 
